@@ -1,0 +1,56 @@
+1.What are the new features added in Java 8 ?
+
+    Answer: Lambda expression − Adds functional processing capability to Java.
+
+                Method references − Referencing functions by their names instead of invoking them directly. Using functions as parameter.
+
+                Default method − Interface to have default method implementation.
+
+                New tools − New compiler tools and utilities are added like ‘jdeps’ to figure out dependencies.
+
+                Stream API − New stream API to facilitate pipeline processing.
+
+                Date Time API − Improved date time API.
+
+                Optional − Emphasis on best practices to handle null values properly.
+
+                Nashorn, JavaScript Engine − A Java-based engine to execute JavaScript code.
+2.Create a list of String with 20 different data and display it using stream API.
+    Answer:
+
+3.Filter the list of String starting with “A” and length between 4 and 8.
+4.Filter the list of String containing “aj” and not containing white space.
+5.Create a list of Integers and filter the numbers greater than 50 and less than 100.
+6.Create a list of Integers and filter the even numbers.
+7.Create a list of Integer and filter the odd numbers
+8.Create a list of Integers and filter the positive numbers.
+9.Create a list of Integers and filter the negative numbers.
+10.Create a list of Integers and map it to the square of every element and collect it to set.
+11.Create a list of Integers and sum it using reduce.
+12.Create a list of String and make a single string separate by delimiter ‘|’ pipe.
+13.Output should be  ram|shyam|hari|sita
+14.Create a class employee with the following parameters
+Id
+Name
+Address
+Email
+Mobile number
+Age
+Designation
+Salary
+Experience
+15.Create a list of Employees with 15 objects of different data using constructor and getter setter methods.
+16.Create a function to display the list of Employees.
+17.Filter the employees whose salary is greater than 20000.
+18.Filter the employees whose designation is CTO or DCTO.
+19.Filter the employee whose age is between 20 and 25 and salary is less than 15000.
+20.Filter the employees who are using gmail.
+21.Filter the employee whose mobile number length is not equal to 10.
+22.Filter the employees whose name starts from “s” and age is greater than 25.
+23.Create a class called MinimalDto with parameters with all arguments and no arguments constructor
+Id
+Name
+Address
+Email
+24.Map a list of employees to List of minimal Dto class along with above filters from point number 15 to 21.
+25.Find the sum of salary of the employees along with the above filters from point number 15 to 21.
