@@ -15,7 +15,7 @@ public class SortElementsQ8 {
         simpleList.add(4.3);
         simpleList.add(6.0);
 // This can be achieved easily using APIStream
-        List newList = simpleList.stream().sorted().collect(Collectors.toList());
+        List<Double> newList = simpleList.stream().sorted().collect(Collectors.toList());
         System.out.println(newList);
 
     }

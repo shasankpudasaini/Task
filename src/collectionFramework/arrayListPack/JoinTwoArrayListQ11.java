@@ -19,21 +19,27 @@ public class JoinTwoArrayListQ11 {
         simpleList.add("Shasank5");
         simpleList.add("Shasank6");
         simpleList.add("Shasank7");
+        List<String> newList = new ArrayList<>();
+        newList.add("Shasank9");
 
-        List<String> gotList = new ArrayList<>();
+        List<String> gotList = new ArrayList<>(simpleList);
+        gotList.addAll(newList);
         String confirmation;
         int count = 1;
-        do {
-            System.out.println("What is element #" + count + " ?");
-            gotList.add(sc.next());
+//        do {
+//            System.out.println("What is element #" + count + " ?");
+//            gotList.add(sc.next());
+//
+//            System.out.println("Want to add more elements ? ");
+//            confirmation = sc.next();
+//            count++;
+//        } while (confirmation.equalsIgnoreCase("y"));
 
-            System.out.println("Want to add more elements ? ");
-            confirmation = sc.next();
-            count++;
-        } while (confirmation.equalsIgnoreCase("y"));
 
-        System.out.println(gotList);
-      simpleList.addAll(gotList);
+      //simpleList.addAll(gotList);
         System.out.println(simpleList);
+        gotList.add("Shasank8");
+        Collections.sort(gotList);
+        System.out.println(gotList);
     }
 }

@@ -20,10 +20,11 @@ public class CompareArrayListsQ10 {
         gotList.add("Shasank1");
         gotList.add("Shasank2");
         gotList.add("Shasank3");
+        gotList.add("Shasank7");
         gotList.add("Shasank4");
         gotList.add("Shasank5");
         gotList.add("Shasank6");
-        gotList.add("Shasank7");
+
 //        String confirmation;
 //        int count =1;
 //        do{
