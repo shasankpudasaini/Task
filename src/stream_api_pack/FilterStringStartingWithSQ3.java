@@ -1,12 +1,11 @@
 package stream_api_pack;
 
-//Create a list of String with 20 different data and display it using stream API.
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+//.Filter the list of String starting with “S” and length between 4 and 8.
 
-public class DisplayElementsofListQ2 {
-
+public class FilterStringStartingWithSQ3 {
     public static void main(String[] args) {
         Employee e1 = new Employee("a", "Shasank", "9841401395","shasank@gmail.com");
         Employee e2 = new Employee("b", "Raazan", "987654321","raazan@gmail.com");
@@ -37,7 +36,14 @@ public class DisplayElementsofListQ2 {
         employeeList.add(e17);  employeeList.add(e18);  employeeList.add(e19);  employeeList.add(e20);
 
 
-        employeeList.stream().forEach(s-> System.out.println(s.toString()));
+        List<String> nameList = new ArrayList<>();
+        for (Employee employee : employeeList) {
+                nameList.add(employee.getName());
+        }
+        System.out.println(nameList);
+        List<String> nameStartWithS = nameList.stream().filter(s -> s.startsWith("Sh") && (s.length() >= 4 && s.length() <=8))
+                .collect(Collectors.toList());
+        System.out.println(nameStartWithS);
 
 
 

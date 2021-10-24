@@ -1,13 +1,13 @@
 package stream_api_pack;
 
-//Create a list of String with 20 different data and display it using stream API.
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
-public class DisplayElementsofListQ2 {
-
+//12.Create a list of String and make a single string separate by delimiter ‘|’ pipe.
+public class UsingDelimiter {
     public static void main(String[] args) {
+
         Employee e1 = new Employee("a", "Shasank", "9841401395","shasank@gmail.com");
         Employee e2 = new Employee("b", "Raazan", "987654321","raazan@gmail.com");
         Employee e3 = new Employee("c", "Bibek", "3456789676","bibek@gmail.com");
@@ -37,9 +37,12 @@ public class DisplayElementsofListQ2 {
         employeeList.add(e17);  employeeList.add(e18);  employeeList.add(e19);  employeeList.add(e20);
 
 
-        employeeList.stream().forEach(s-> System.out.println(s.toString()));
+        List<String> nameList = new ArrayList<>();
+        for (Employee employee : employeeList) {
+            nameList.add(employee.getName());
+        }
 
-
-
+        String delimited = nameList.stream().reduce("" , (s, s1) -> s+ "|" +s1);
+        System.out.println(delimited);
     }
 }
